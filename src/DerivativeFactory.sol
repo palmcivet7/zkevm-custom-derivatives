@@ -3,7 +3,6 @@
 pragma solidity ^0.8.19;
 
 import {CustomDerivative} from "./CustomDerivative.sol";
-import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 
 /**
  * @title DerivativeFactory
@@ -19,7 +18,7 @@ import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
  *  - long or short position (the deploying user will choose their position and the counterparty will take the opposite)
  */
 
-contract DerivativeFactory is Ownable {
+contract DerivativeFactory {
     event DerivativeCreated(address derivativeContract, address partyA);
 
     function createCustomDerivative(
