@@ -6,7 +6,6 @@ import {
   DERIVATIVE_FACTORY_ABI,
   API3_ETH_PRICE_FEED_ADDRESS,
   MOCK_USDC_TOKEN_ADDRESS,
-  ZKEVM_POLYGONSCAN_RPC_URL,
 } from "../utils/constants";
 
 const DeploySection = () => {
